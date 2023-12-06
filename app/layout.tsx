@@ -25,12 +25,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <section
-            id='app-bar'
-            className='flex h-14 items-center justify-end p-2'
-          >
-            <LightSwitch />
-          </section>
           {children}
         </ThemeProvider>
       </body>

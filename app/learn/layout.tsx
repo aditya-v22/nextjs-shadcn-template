@@ -54,6 +54,14 @@ export default function LearnLayout({
           Page 3 auto redirection to page 1 in 5 seconds
         </Link>
       </section>
+      <section id='content' className='mt-4 min-h-full rounded py-2 text-xl'>
+        <Link
+          className='px border border-white py-1 underline'
+          href='/learn/folder-naming-pattern'
+        >
+          Folder naming pattern
+        </Link>
+      </section>
       <section id='content' className='mt-4 min-h-full rounded px-4 py-2'>
         {children}
       </section>
