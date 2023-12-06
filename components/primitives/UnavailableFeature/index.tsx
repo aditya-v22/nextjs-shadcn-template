@@ -54,15 +54,15 @@ export default function UnavailableFeature({
       return 'Thank you for your vote!';
     }
     return `${featureLabel} is unavailable`;
-  }, [voted]);
+  }, [alertOpen, featureLabel]);
 
   const description = React.useMemo(() => {
     if (voted) {
       return 'We have recorded your vote for this feature. Thanks for taking the time to vote!';
     }
 
-    return `This is a WIP project for demonstration purposes and "${featureName}" is not available yet.`;
-  }, [voted]);
+    return `This is a WIP project for demonstration purposes and "${featureLabel}" is not available yet.`;
+  }, [voted, featureLabel]);
 
   const handleVote = () => {
     markAsVoted();
