@@ -18,7 +18,6 @@ export interface Post {
 }
 
 export function PostSkeleton() {
-  console.log('rendering skeleton');
   return (
     <Card>
       <CardHeader>
